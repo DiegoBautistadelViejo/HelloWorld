@@ -127,7 +127,7 @@ name: Azure Web App Deployment
 on:
   push:
     branches:
-      - main
+      - llm-chat
 
 jobs:
   build:
