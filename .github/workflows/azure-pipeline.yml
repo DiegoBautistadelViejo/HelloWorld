@@ -18,6 +18,10 @@ jobs:
       with:
         php-version: '8.3'
 
+    - name: Replace GREETING_NAME in index.html
+      run: |
+        sed -i 's/{{GREETING_NAME}}/${{ vars.GREETING_NAME }}/g' index.html
+
     - name: Log in to Azure
       uses: azure/login@v1
       with:
