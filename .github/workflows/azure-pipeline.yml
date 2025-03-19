@@ -33,3 +33,5 @@ jobs:
         app-name: hello-world-app
         slot-name: production
         package: .
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
