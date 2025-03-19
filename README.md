@@ -2,7 +2,7 @@
 
 This repository contains the code and configuration to deploy a simple AI chatbot on Azure using a PHP web application and GitHub Actions for CI/CD. The chatbot connects to OpenAI’s GPT model to process user inputs and provide intelligent responses. The web app is hosted on Azure App Service.
 
-## Table of Contents
+## Table of Contents 
 
 1. [Project Overview](#project-overview)
 2. [Components](#components)
