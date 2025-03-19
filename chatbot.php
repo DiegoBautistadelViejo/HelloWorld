@@ -7,7 +7,7 @@ $message = $input["message"];
 $api_key = getenv("OPENAI_API_KEY");
 
 $data = [
-    "model" => "gpt-4",
+    "model" => "gpt-3.5-turbo",
     "messages" => [
         ["role" => "system", "content" => "You are a helpful AI assistant."],
         ["role" => "user", "content" => $message]
