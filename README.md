@@ -12,7 +12,8 @@ This repository contains the code and configuration to deploy a simple AI chatbo
 4. [Deployment Process](#deployment-process)
 5. [Usage](#usage)
 6. [Pipeline Details](#pipeline-details)
-7. [Troubleshooting](#troubleshooting)
+7. [Optional Features](#optional-features)
+8. [Troubleshooting](#troubleshooting)
 
 ## Project Overview
 
@@ -155,6 +156,23 @@ jobs:
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 ```
+## Optional Features
+
+### PHP Info Page
+
+Once deployed, you can create a PHP info page to check your PHP configuration:
+
+1. For this, you need the `phpinfo.php` in the root of your app:
+
+    ```php
+    <?php
+    phpinfo();
+    ?>
+    ```
+
+2. Visit the `phpinfo.php` page at your app's URL (`https://your-app-name.azurewebsites.net/phpinfo.php`) to view detailed information about the PHP environment.
+
+
 
 ## Troubleshooting
 
