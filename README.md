@@ -65,7 +65,7 @@ To deploy the app on Azure, you need to create an Azure App Service. Follow thes
 
      ```bash
      git clone https://github.com/DiegoBautistadelViejo/HelloWorld.git
-     cd HelloWorld-main
+     cd HelloWorld
      ```
 
 2. **Set Up GitHub Secrets**:
