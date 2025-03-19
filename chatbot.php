@@ -26,5 +26,12 @@ $context  = stream_context_create($options);
 $result = file_get_contents("https://api.openai.com/v1/chat/completions", false, $context);
 $response = json_decode($result, true);
 
-echo json_encode(["reply" => $response["choices"][0]["message"]["content"]]);
+// Check for errors in the API response
+if (isset($response["error"])) {
+    // If there's an error, return just the error message
+    echo json_encode(["error_message" => $response["error"]["message"]]);
+} else {
+    // If no error, return the generated reply
+    echo json_encode(["reply" => $response["choices"][0]["message"]["content"]]);
+}
 ?>
