@@ -64,8 +64,8 @@ To deploy the app on Azure, you need to create an Azure App Service. Follow thes
    - Clone this repository to your local machine.
 
      ```bash
-     git clone https://github.com/yourusername/ai-chat-web-app.git
-     cd ai-chat-web-app
+     git clone https://github.com/DiegoBautistadelViejo/HelloWorld.git
+     cd HelloWorld-main
      ```
 
 2. **Set Up GitHub Secrets**:
