@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: application/json");
 
-$input = json_decode(file_get_contents("php://input"), true);
+$input = json_decode(file_get_contents("php://input"), true); 
 $message = $input["message"] ?? "";
 
 $api_key = getenv("OPENAI_API_KEY");
